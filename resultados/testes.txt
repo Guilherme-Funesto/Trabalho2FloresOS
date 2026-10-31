@@ -1,0 +1,16 @@
+test_conservacao_aleatoria (__main__.MemoriaTest.test_conservacao_aleatoria) ... ok
+test_invalidos (__main__.MemoriaTest.test_invalidos) ... ok
+test_limites_e_reuso (__main__.MemoriaTest.test_limites_e_reuso) ... ok
+test_sequencia_enunciado (__main__.MemoriaTest.test_sequencia_enunciado) ... ok
+test_belady (__main__.PaginasTest.test_belady) ... ok
+test_enunciado (__main__.PaginasTest.test_enunciado) ... ok
+test_invalidos (__main__.PaginasTest.test_invalidos) ... ok
+test_java_invalidos (__main__.PaginasTest.test_java_invalidos) ... ok
+test_java_mesma_entrada (__main__.PaginasTest.test_java_mesma_entrada) ... ok
+test_limites (__main__.PaginasTest.test_limites) ... ok
+test_lru_contra_oraculo_independente (__main__.PaginasTest.test_lru_contra_oraculo_independente) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.690s
+
+OK

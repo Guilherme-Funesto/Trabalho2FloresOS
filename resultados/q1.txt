@@ -1,0 +1,20 @@
+ARRAY ESTATICO: 5 inteiros
+[0] valor= 1 endereco=00007ff6992d9000
+[1] valor= 2 endereco=00007ff6992d9004
+[2] valor= 3 endereco=00007ff6992d9008
+[3] valor= 4 endereco=00007ff6992d900c
+[4] valor= 5 endereco=00007ff6992d9010
+ARRAY DINAMICO: 10 inteiros
+[0] valor=10 endereco=0000022274fc2440
+[1] valor=11 endereco=0000022274fc2444
+[2] valor=12 endereco=0000022274fc2448
+[3] valor=13 endereco=0000022274fc244c
+[4] valor=14 endereco=0000022274fc2450
+[5] valor=15 endereco=0000022274fc2454
+[6] valor=16 endereco=0000022274fc2458
+[7] valor=17 endereco=0000022274fc245c
+[8] valor=18 endereco=0000022274fc2460
+[9] valor=19 endereco=0000022274fc2464
+Diferenca numerica absoluta dos enderecos: 138350093757376
+Enderecos virtuais; o layout depende do sistema e da execucao.
+Memoria dinamica liberada.

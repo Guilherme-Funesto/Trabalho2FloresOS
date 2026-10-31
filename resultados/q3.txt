@@ -1,0 +1,15 @@
+FIFO | ordem de chegada: mais antiga -> mais nova
+Ref: 7 | Frames: [7] | Page Fault | Faltas: 1
+Ref: 0 | Frames: [7, 0] | Page Fault | Faltas: 2
+Ref: 1 | Frames: [7, 0, 1] | Page Fault | Faltas: 3
+Ref: 2 | Frames: [0, 1, 2] | Page Fault (substituiu 7) | Faltas: 4
+Ref: 0 | Frames: [0, 1, 2] | Page Hit | Faltas: 4
+Ref: 3 | Frames: [1, 2, 3] | Page Fault (substituiu 0) | Faltas: 5
+Ref: 0 | Frames: [2, 3, 0] | Page Fault (substituiu 1) | Faltas: 6
+Ref: 4 | Frames: [3, 0, 4] | Page Fault (substituiu 2) | Faltas: 7
+Ref: 2 | Frames: [0, 4, 2] | Page Fault (substituiu 3) | Faltas: 8
+Ref: 3 | Frames: [4, 2, 3] | Page Fault (substituiu 0) | Faltas: 9
+Ref: 0 | Frames: [2, 3, 0] | Page Fault (substituiu 4) | Faltas: 10
+Ref: 3 | Frames: [2, 3, 0] | Page Hit | Faltas: 10
+Ref: 2 | Frames: [2, 3, 0] | Page Hit | Faltas: 10
+Total: 13 referencias; 10 faltas; 3 acertos; taxa: 76.92%

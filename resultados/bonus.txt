@@ -1,0 +1,36 @@
+FIFO: ordem de chegada
+Ref  7 | [7]          | Fault               | faltas=1
+Ref  0 | [7, 0]       | Fault               | faltas=2
+Ref  1 | [7, 0, 1]    | Fault               | faltas=3
+Ref  2 | [0, 1, 2]    | Fault (saiu 7)      | faltas=4
+Ref  0 | [0, 1, 2]    | Hit                 | faltas=4
+Ref  3 | [1, 2, 3]    | Fault (saiu 0)      | faltas=5
+Ref  0 | [2, 3, 0]    | Fault (saiu 1)      | faltas=6
+Ref  4 | [3, 0, 4]    | Fault (saiu 2)      | faltas=7
+Ref  2 | [0, 4, 2]    | Fault (saiu 3)      | faltas=8
+Ref  3 | [4, 2, 3]    | Fault (saiu 0)      | faltas=9
+Ref  0 | [2, 3, 0]    | Fault (saiu 4)      | faltas=10
+Ref  3 | [2, 3, 0]    | Hit                 | faltas=10
+Ref  2 | [2, 3, 0]    | Hit                 | faltas=10
+
+LRU: menos recente -> mais recente (timestamps de acesso)
+Ref  7 | [7]          | Fault               | faltas=1
+Ref  0 | [7, 0]       | Fault               | faltas=2
+Ref  1 | [7, 0, 1]    | Fault               | faltas=3
+Ref  2 | [0, 1, 2]    | Fault (saiu 7)      | faltas=4
+Ref  0 | [1, 2, 0]    | Hit                 | faltas=4
+Ref  3 | [2, 0, 3]    | Fault (saiu 1)      | faltas=5
+Ref  0 | [2, 3, 0]    | Hit                 | faltas=5
+Ref  4 | [3, 0, 4]    | Fault (saiu 2)      | faltas=6
+Ref  2 | [0, 4, 2]    | Fault (saiu 3)      | faltas=7
+Ref  3 | [4, 2, 3]    | Fault (saiu 0)      | faltas=8
+Ref  0 | [2, 3, 0]    | Fault (saiu 4)      | faltas=9
+Ref  3 | [2, 0, 3]    | Hit                 | faltas=9
+Ref  2 | [0, 3, 2]    | Hit                 | faltas=9
+
+FIFO: 10 faltas; taxa=76.92%
+LRU:  9 faltas; taxa=69.23%
+Diferenca FIFO - LRU: 1 faltas
+LRU teve menos faltas nesta sequencia: aproveitou acessos recentes.
+LRU atualiza a ordem em cada acerto; FIFO so altera a fila nas faltas.
+Uma sequencia nao demonstra superioridade universal.

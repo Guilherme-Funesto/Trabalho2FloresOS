@@ -1,0 +1,13 @@
+P1 (90) -> particao 1 (100); interna=10; total=10
+P2 (140) -> particao 2 (150); interna=10; total=20
+P3 (180) -> particao 3 (200); interna=20; total=40
+P2 liberado; interna total=30
+P4 (100) -> particao 2 (150); interna=50; total=80
+FALHA: P5 (350); nenhuma particao livre comporta o processo.
+Particao | Capacidade | Processo | Usado | Interna
+   1     |    100     |    P1    |  90   |   10   
+   2     |    150     |    P4    |  100  |   50   
+   3     |    200     |    P3    |  180  |   20   
+   4     |    250     |  LIVRE   |   0   |    0   
+   5     |    300     |  LIVRE   |   0   |    0   
+Usado=370; livre=550; fragmentacao interna=80

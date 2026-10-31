@@ -1,0 +1,41 @@
+Ambiente: CPython 3.12.14
+
+CENARIO 1: referencia unica
+CRIADO: A (dados: 1000000 bytes)
+getrefcount(A): 2 (inclui referencia temporaria)
+DESTRUIDO: A
+A destruido imediatamente: True
+
+CENARIO 2: duas referencias ao mesmo objeto
+CRIADO: B (dados: 1000000 bytes)
+getrefcount(B): 3
+B continua vivo pelo alias: True
+getrefcount(alias): 2
+DESTRUIDO: B
+B destruido ao remover ultimo alias: True
+
+CENARIO 3: autorreferencia sem raiz externa
+CRIADO: C (dados: 1000000 bytes)
+getrefcount(C): 3
+C continua vivo pelo ciclo: True
+DESTRUIDO: C
+Inalcancaveis encontrados por gc.collect(): 1
+C coletado: True
+
+CENARIO 4: ciclo entre dois objetos
+CRIADO: D (dados: 1000000 bytes)
+CRIADO: E (dados: 1000000 bytes)
+Ciclo vivo antes da coleta: True
+DESTRUIDO: D
+DESTRUIDO: E
+Inalcancaveis encontrados por gc.collect(): 2
+D e E coletados: True
+
+ESTATISTICAS gc.get_stats() (acumuladas e variacoes)
+Geracao 0: {'collections': 10, 'collected': 141, 'uncollectable': 0}
+  Variacao: {'collections': 0, 'collected': 0, 'uncollectable': 0}
+Geracao 1: {'collections': 0, 'collected': 0, 'uncollectable': 0}
+  Variacao: {'collections': 0, 'collected': 0, 'uncollectable': 0}
+Geracao 2: {'collections': 3, 'collected': 3, 'uncollectable': 0}
+  Variacao: {'collections': 2, 'collected': 3, 'uncollectable': 0}
+Coleta automatica restaurada: True

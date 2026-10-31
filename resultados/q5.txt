@@ -1,0 +1,15 @@
+Operacoes por teste: 1000000; repeticoes: 7; CLOCKS_PER_SEC=1000
+Rodada | Local/pilha (s) | Heap (s)
+     1 |        0.001000 | 0.027000
+     2 |        0.001000 | 0.028000
+     3 |        0.002000 | 0.026000
+     4 |        0.002000 | 0.026000
+     5 |        0.001000 | 0.018000
+     6 |        0.002000 | 0.034000
+     7 |        0.002000 | 0.026000
+Media local: 0.001571429 s
+Media heap: 0.026428571 s
+Tempo adicional do heap relativo ao local: 1581.82%
+Razao heap/local: 16.82x
+Checksums: 499999500000 / 499999500000
+Resultado depende do ambiente; nao representa custo puro de alocacao.

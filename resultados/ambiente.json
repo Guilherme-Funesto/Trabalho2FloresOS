@@ -1,0 +1,36 @@
+{
+  "sistema": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "compilador_C": "GCC 16.2.0 (w64devkit 2.11.0), -std=c11 -O0 -Wall -Wextra -pedantic",
+  "java": "openjdk version \"25.0.4.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS, mixed mode, sharing)\n",
+  "execucoes": {
+    "q1": {
+      "comando": "q1.exe",
+      "codigo_saida": 0
+    },
+    "q2": {
+      "comando": "python q2_fragmentacao.py",
+      "codigo_saida": 0
+    },
+    "q3": {
+      "comando": "java Fifo 3 \"7,0,1,2,0,3,0,4,2,3,0,3,2\"",
+      "codigo_saida": 0
+    },
+    "q4": {
+      "comando": "python q4_gc.py",
+      "codigo_saida": 0
+    },
+    "q5": {
+      "comando": "q5.exe",
+      "codigo_saida": 0
+    },
+    "bonus": {
+      "comando": "python bonus_lru.py 3 \"7,0,1,2,0,3,0,4,2,3,0,3,2\"",
+      "codigo_saida": 0
+    },
+    "testes": {
+      "comando": "python testes.py --java",
+      "codigo_saida": 0
+    }
+  }
+}
