@@ -12,18 +12,15 @@ Estudo de alocação, fragmentação, substituição de páginas, coleta de lixo
 
 Campos de identificação preenchíveis no PDF. Preencher ao menos cinco integrantes antes da entrega.
 
-Turma: ____________________
-Data: ____________________
-1. Nome: ____________________ | RA: __________
-2. Nome: ____________________ | RA: __________
-3. Nome: ____________________ | RA: __________
-4. Nome: ____________________ | RA: __________
-5. Nome: ____________________ | RA: __________
-6. Nome: ____________________ | RA: __________
-7. Nome: ____________________ | RA: __________
-8. Nome: ____________________ | RA: __________
-Representante: ____________________
-GitHub: ____________________
+Turma: Engenharia de software 4
+Data: 15/11/2026
+1. Nome: Pedro Augusto Cordeiro Holanda | RA: 26008977-2
+2. Nome: Jonathan de Lima Bellato | RA: 24001310-2
+3. Nome: Maikon Vinicio Duarte dos Santo | RA: 25165588-2
+4. Nome: Guilherme Costa Ferreira | RA: 25068539-2
+5. Nome: Thiago de Barros Inácio | RA: 25363611-2
+6. Nome: Michel Chacon | RA: 25016187-2
+Representante: Jonathan de Lima Bellato
 
 
 # Resumo e organização
